@@ -261,6 +261,13 @@ header ul li a:hover {
     flex-direction: column;
   }
 
+  .intro-section {
+    background: url(./images/thumbnail.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vh;
+  }
+
   .story-text p {
     font-size: 1.4rem;
   }
