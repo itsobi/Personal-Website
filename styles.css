@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--black);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #eee;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --black: #080100;
+  --white: #eee; 
+}
+
+/************* START HERE **************/
+header {
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin: 2rem;
+  font-size: 2rem;
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #eee;
+}
+
+header ul li a:hover {
+  color: #FF0000;
+  transition: all .3s;
+}
+
+.fa-instagram:hover {
+  color:  #8a3ab9;
+  transition: all .3s;
+}
+
+.fa-linkedin:hover {
+  color: #0e76a8;
+  transition: all .3s; 
+}
+
+.home-section {
+  background-color: #080100	;
+  padding: 5rem 0;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image img {
+  width: 350px;
+  border-radius: 3px;
+}
+
+.home-text {
+  width: 350px;
+  top: 25rem;
+  padding: 1.5rem;
+  border-radius: 3px;
+  
+  text-align: center;
+}
+
+.home-text p {
+  font-size: 2rem;
+}
+
+/************* INTRO SECTION *********/
+/************* INTRO SECTION *********/
+/************* INTRO SECTION *********/
+.intro-section {
+  background: url(./images/vsNCState.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+}
+
+
+
+/************** MY STORY SECTION *****************/
+/************** MY STORY SECTION *****************/
+/************** MY STORY SECTION *****************/
+
+.title {
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.title h1 {
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.story-text {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.story-text p {
+  font-size: 2rem;
+}
+
+/**************** PHOTO SECTION ***************/
+/**************** PHOTO SECTION ***************/
+/**************** PHOTO SECTION ***************/
+.photo-section {
+  height: 80vh;
+}
+
+.photo-section h1 {
+  color: var(--white);
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.photo-box {
+  background: url(./images/vsMTSU.jpg) no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  border-radius: 5px;
+  color: var(--white);
+  box-shadow: 0 0 10px 10px;
+  animation: slide 40s infinite;
+}
+
+@keyframes slide{
+  25% {
+    background: url(./images/vsLaTech.jpg) no-repeat center;
+    background-size: cover;
+  }
+  50% {
+    background: url(./images/okstate.jpg) no-repeat center;
+    background-size: cover;
+  }
+  75% {
+    background: url(./images/oupic.jpg) no-repeat center;
+    background-size: cover;
+  }
+  100% {
+    background: url(./images/vsFIU.jpg) no-repeat center;
+    background-size: cover;
+  }
+}
+
+.contact-section {
+  padding-bottom: 3rem;
+}
+
+.contact-section p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************** MEDIA QUERIES ************************/
+/**************** MEDIA QUERIES ************************/
+/**************** MEDIA QUERIES ************************/
+
+
+
+@media screen and (max-width: 600px) {
+  .ignore {
+    display: none;
+  }
+
+  .logo p {
+    font-size: 2rem;
+  }
+
+  nav i {
+    font-size: 3rem;
+  }
+
+  /* HOME SECTION */
+  /* HOME SECTION */
+  /* HOME SECTION */
+  .home {
+    flex-direction: column;
+  }
+
+  .story-text p {
+    font-size: 1.4rem;
+  }
+
+  .photo-box {
+    height: 50vh;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    border-radius: 5px;
+    color: var(--white);
+    box-shadow: 0 0 10px 10px;
+    animation: slide 40s infinite linear;
+  }
+
+}
