@@ -15,7 +15,9 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-queries.css">
   </head>
   <body>
     <header>
@@ -31,13 +33,13 @@
       </nav>
     </header>
 
-    <section class="home-section moveUp">
+    <section class="home-section">
       <div class="home container">
-        <div class="home-image">
+        <div class="home-image" data-aos="fade-right">
           <img src="./images/faccepic.jpg" alt="">
         </div>
 
-        <div class="home-text">
+        <div class="home-text" data-aos="fade-left">
           <p>
             Hey, <br> welcome to my website! You may have seen me, or, heard of me from the <br> <a href="https://www.youtube.com/watch?v=1YvEKxQJRPk&t=11s" target="_blank" rel="noopener noreferrer">football field</a>, maybe even somewhere on the internet. All of that being said, I am much more than that!
             <br>
@@ -49,10 +51,14 @@
     </section>
 
     <section class="intro-section">
-      <div class="container center"></div>
+      <div class="container center">
+        <div class="img">
+          <!-- <img src="./images/thumbnail.jpg" alt=""> -->
+        </div>
+      </div>
     </section>
 
-    <section class="my-story" id="about">
+    <section class="my-story" id="about" data-aos="fade-up">
       <div class="container">
         <div class="title">
           <h1>About Me</h1>
@@ -67,7 +73,7 @@
     </section>
 
 
-    <section class="photo-section">
+    <section class="photo-section" data-aos="fade-down">
       <div class="container">
         <div class="title">
           <h1>Through The Years</h1>
@@ -79,7 +85,7 @@
 
 
 
-    <section class="contact-section">
+    <section class="contact-section" data-aos="fade-up">
       <div class="container">
         <div class="title">
           <h1>Contact</h1>
@@ -95,6 +101,7 @@
       </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
