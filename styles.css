@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +10,9 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--black);
+  font-family: "Poppins", sans-serif;
+  /* background-color: var(--black); */
+  background-color: #0a0a0a;
 }
 
 p {
@@ -34,12 +35,12 @@ p {
 
 :root {
   --black: #080100;
-  --white: #eee; 
+  --white: #eee;
 }
 
 /************* START HERE **************/
 header {
-  background-color: #0a0a0a;
+  background-color: var(--black);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -65,30 +66,30 @@ header ul li a {
   color: #eee;
 }
 
-header ul li a:hover {
-  color: #FF0000;
-  transition: all .3s;
-}
-
 .fa-instagram:hover {
-  color:  #8a3ab9;
-  transition: all .3s;
+  color: #cd486b;
+  transition: all 0.3s;
 }
 
 .fa-linkedin:hover {
   color: #0e76a8;
-  transition: all .3s; 
+  transition: all 0.3s;
 }
 
 .fa-github:hover {
   color: #4078c0;
-  transition: all .3s;
+  transition: all 0.3s;
+}
+
+.fa-youtube:hover {
+  color: #ff0000;
+  transition: all 0.3s;
 }
 
 /* HOME SECTION */
 
 .home-section {
-  background-color: #080100	;
+  background-color: #0a0a0a;
   padding: 5rem 0;
 }
 
@@ -100,7 +101,8 @@ header ul li a:hover {
 
 .home-image img {
   width: 350px;
-  border-radius: 3px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 10px;
 }
 
 .home-text {
@@ -108,14 +110,13 @@ header ul li a:hover {
   top: 25rem;
   padding: 1.5rem;
   border-radius: 3px;
-  
+
   text-align: center;
 }
 
 .home-text p {
   font-size: 2rem;
 }
-
 
 /************* INTRO SECTION *********/
 /************* INTRO SECTION *********/
@@ -126,8 +127,6 @@ header ul li a:hover {
   background-attachment: fixed;
   height: 40vh;
 }
-
-
 
 /************** MY STORY SECTION *****************/
 /************** MY STORY SECTION *****************/
@@ -143,7 +142,6 @@ header ul li a:hover {
   color: var(--white);
   font-size: 4rem;
   font-weight: 500;
-  text-decoration: underline;
 }
 
 .story-text {
@@ -156,14 +154,14 @@ header ul li a:hover {
   font-size: 2rem;
 }
 
-/**************** PHOTO SECTION ***************/
-/**************** PHOTO SECTION ***************/
-/**************** PHOTO SECTION ***************/
-.photo-section {
-  height: 80vh;
+/**************** YouTube Vid Section ***************/
+/**************** YouTube Vid Section ***************/
+/**************** YouTube Vid Section ***************/
+.yt-section {
+  height: 55vh;
 }
 
-.photo-section h1 {
+.yt-section h1 {
   color: var(--white);
   text-align: center;
   padding-top: 3rem;
@@ -171,43 +169,52 @@ header ul li a:hover {
   font-weight: 500;
 }
 
-.photo-box {
-  background: url(./images/vsMTSU.jpg) no-repeat center;
-  background-size: cover;
-  height: 60vh;
-  width: 500px;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-  border-radius: 5px;
-  color: var(--white);
-  box-shadow: 0 0 10px 10px;
-  animation: slide 40s infinite;
-}
-
-@keyframes slide{
-  25% {
-    background: url(./images/vsLaTech.jpg) no-repeat center;
-    background-size: cover;
-  }
-  50% {
-    background: url(./images/okstate.jpg) no-repeat center;
-    background-size: cover;
-  }
-  75% {
-    background: url(./images/oupic.jpg) no-repeat center;
-    background-size: cover;
-  }
-  100% {
-    background: url(./images/vsFIU.jpg) no-repeat center;
-    background-size: cover;
-  }
-}
-
 .contact-section {
   padding-bottom: 5rem;
+  background-color: #191919;
 }
 
 .contact-section p {
   font-size: 2rem;
   text-align: center;
+}
+
+/**************** Newsletter Section ***************/
+/**************** Newsletter Section ***************/
+/**************** Newsletter Section ***************/
+
+.email-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 10px 10px 15px red, -10 -10 15px blue; */
+}
+
+.form-box {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.form-box input {
+  font-size: 18px;
+  padding: 1.5rem 1rem;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.form-box button {
+  padding: 1.2rem 2rem;
+  font-size: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+}
+
+.form-box button:hover {
+  color: var(--white);
+  background-color: var(--black);
+  transition: all 0.3s;
 }
