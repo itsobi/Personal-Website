@@ -8,7 +8,7 @@
   }
 
   nav i {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   /* HOME SECTION */
@@ -32,6 +32,10 @@
 
   .yt-section {
     height: 100%;
+  }
+
+  .newsletter-section {
+    padding-bottom: 5rem;
   }
 
   .form-box {
