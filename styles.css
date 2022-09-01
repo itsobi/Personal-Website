@@ -187,12 +187,15 @@ header ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* box-shadow: 10px 10px 15px red, -10 -10 15px blue; */
+}
+
+.newsletter-section {
+  background-color: var(--black);
 }
 
 .form-box {
-  padding: 10px;
   border-radius: 20px;
+  padding-bottom: 5rem;
 }
 
 .form-box input {
@@ -214,7 +217,6 @@ header ul li a {
 }
 
 .form-box button:hover {
-  color: var(--white);
-  background-color: var(--black);
+  color: red;
   transition: all 0.3s;
 }
