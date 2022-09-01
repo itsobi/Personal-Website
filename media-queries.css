@@ -26,8 +26,14 @@
     display: none;
   }
 
+  .home-text {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
   .story-text p {
     font-size: 1.4rem;
+    letter-spacing: 2px;
   }
 
   .yt-section {
@@ -44,5 +50,6 @@
 
   .form-box button {
     margin-top: 1rem;
+    color: var(--black);
   }
 }
