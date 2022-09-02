@@ -1,7 +1,3 @@
-AOS.init({
-  duration: 1000,
-});
-
 const form = document.getElementById("sheetdb-form");
 const input = document.getElementById("input");
 form.addEventListener("submit", (e) => {
