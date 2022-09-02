@@ -18,6 +18,10 @@
     flex-direction: column;
   }
 
+  .home-image {
+    padding-bottom: 5rem;
+  }
+
   .intro-section {
     display: none;
   }
