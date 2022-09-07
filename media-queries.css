@@ -3,6 +3,11 @@
     display: none;
   }
 
+  header {
+    position: sticky;
+    top: 0;
+  }
+
   .logo p {
     font-size: 1.6rem;
   }
