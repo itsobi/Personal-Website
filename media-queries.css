@@ -55,10 +55,16 @@
 
   .form-box {
     text-align: center;
+    flex-direction: column;
   }
 
+  /* .form-box > input {
+    border-radius: 20px;
+    padding: 10px;
+    font-size: medium;
+  } */
+
   .form-box button {
-    margin-top: 1rem;
-    color: var(--black);
+    margin-top: 10px;
   }
 }
